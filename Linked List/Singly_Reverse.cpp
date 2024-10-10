@@ -21,3 +21,14 @@ void reverse(Node* &head){
 //==============================================
 // Using Recursive Approach
 //==============================================
+
+void reverse(node *prev, node *curr,node *&head)
+{
+    if (curr)
+    {
+        reverse(curr, curr->next,head);
+        curr->next = prev;
+    } else {
+        head = prev;
+    }
+}
