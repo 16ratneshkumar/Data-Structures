@@ -23,7 +23,7 @@ void insert(Node* &head,int value){
         head=newnode;
         newnode->prev = head;
         newnode->next = head;
-        std::cout<<"Element "<<value<<" inserted from the list!"<<std::endl;
+        std::cout<<"Element "<<value<<" inserted in the list!"<<std::endl;
     } else{
         Node* temp=head;
         while(temp->next!=head){
@@ -33,7 +33,7 @@ void insert(Node* &head,int value){
         newnode->prev=temp;
         newnode->next = head;
         head->prev = newnode;
-        std::cout<<"Element "<<value<<" inserted from the list!"<<std::endl;
+        std::cout<<"Element "<<value<<" inserted in the list!"<<std::endl;
     }
 }
 
@@ -158,7 +158,7 @@ void insert(Node* &head,Node* &tail,int value){
     if (head==nullptr){
         head=newnode;
         head->next=newnode;
-        std::cout<<"Element "<<value<<" inserted from the list!"<<std::endl;
+        std::cout<<"Element "<<value<<" inserted in the list!"<<std::endl;
         return;
     } else{
     while(temp->next!=head){
@@ -166,7 +166,7 @@ void insert(Node* &head,Node* &tail,int value){
     }
     temp->next=newnode;
     newnode->next=head;
-    std::cout<<"Element "<<value<<" inserted from the list!"<<std::endl;
+    std::cout<<"Element "<<value<<" inserted in the list!"<<std::endl;
     }
 }
 
